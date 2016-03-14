@@ -24,4 +24,11 @@ public class MovieTest {
         assertEquals(movie.getPriceCode(), PriceCodes.Childrens);
     }
 
+    @Test
+    public void getTitleCodeMethodTest() {
+        Movie movie = new Movie("BNL", PriceCodes.NewRelease);
+
+        assertEquals(movie.getTitle(), "BNL");
+    }
+
 }
