@@ -10,13 +10,14 @@ import java.util.List;
  */
 public class StringPrinter extends JournalPrinter {
 
-
-    public StringPrinter(List<Rental> rentals, String customerName) {
-        super(rentals, customerName);
-    }
-
+    /**
+     * Выводит журнал ренты в стринг
+     * @param rentals - ренты участника
+     * @param customerName - имя учатсника
+     * @return
+     */
     @Override
-    public String print() {
+    public String print(List<Rental> rentals, String customerName) {
 
         double totalAmount = 0;
         int frequentRenterPoints = 0;

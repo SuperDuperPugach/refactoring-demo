@@ -19,13 +19,14 @@ public class Customer {
 
 
 	public void addRental(Rental arg){
+
 		m_Rentals.add(arg);
 	}
 
 	public String Statement()
 	{
-		StringPrinter stringPrinter = new StringPrinter(m_Rentals, m_Name);
-		return stringPrinter.print();
+		StringPrinter stringPrinter = new StringPrinter();
+		return stringPrinter.print(m_Rentals, m_Name);
 	}
 }
 

@@ -1,5 +1,8 @@
 package com.scrumtrek.simplestore;
 
+import com.scrumtrek.simplestore.pricecodes.ChildrenCode;
+import com.scrumtrek.simplestore.pricecodes.NewRealeseCode;
+import com.scrumtrek.simplestore.pricecodes.RegularCode;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
