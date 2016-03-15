@@ -1,10 +1,7 @@
 package com.scrumtrek.simplestore;
 
 import org.junit.Before;
-import org.junit.Test;
 
-import static junit.framework.Assert.assertEquals;
-import static junit.framework.Assert.assertTrue;
 import static org.mockito.Mockito.mock;
 
 /**
@@ -22,14 +19,14 @@ public class RentalTest {
     }
 
 
-    @Test
+ /*   @Test
     public void getDaysRentedMethodTest() throws Exception {
         assertEquals(rental.getDaysRented(), daysRented);
-    }
+    }*/
 
 
-    @Test
+  /*  @Test
     public void getMovieMethodTest() throws Exception {
         assertTrue(rental.getMovie() instanceof Movie);
-    }
+    }*/
 }

@@ -16,7 +16,7 @@ public class CustomerTest {
                 "Amount owed is 3.5\n"+
                 "You earned 1 frequent renter points.";
 
-        Movie movie = new Movie("Movie43", PriceCodes.Regular);
+        Movie movie = new Movie("Movie43", new RegularCode());
         Rental rental = new Rental(movie, 3);
         Customer customer = new Customer("Jake");
         customer.addRental(rental);
@@ -32,8 +32,8 @@ public class CustomerTest {
                 "Amount owed is 10.5\n"+
                 "You earned 3 frequent renter points.";
 
-        Movie movie = new Movie("Movie43", PriceCodes.NewRelease);
-        Movie movie2 = new Movie("Aladdin", PriceCodes.Childrens);
+        Movie movie = new Movie("Movie43", new NewRealeseCode());
+        Movie movie2 = new Movie("Aladdin", new ChildrenCode());
         Rental rental = new Rental(movie, 3);
         Rental rental2 = new Rental(movie2,4);
         Customer customer = new Customer("Jake");
@@ -50,7 +50,7 @@ public class CustomerTest {
                 "Amount owed is 2.0\n"+
                 "You earned 1 frequent renter points.";
 
-        Movie movie = new Movie("Movie43", PriceCodes.Regular);
+        Movie movie = new Movie("Movie43", new RegularCode());
         Rental rental = new Rental(movie, 1);
         Customer customer = new Customer("Jake");
         customer.addRental(rental);
